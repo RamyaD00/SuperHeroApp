@@ -14,7 +14,7 @@ import com.example.superheroapp.R
 import com.example.superheroapp.viewModel.HerosViewModel
 import com.example.superheroapp.viewModel.ViewModelUtil
 
-class MainActivity : AppCompatActivity() {
+class HeroesActivity : AppCompatActivity() {
 
     private lateinit var viewModel: HerosViewModel
 

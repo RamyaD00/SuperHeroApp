@@ -20,7 +20,6 @@ class HerosViewModel(private val networkImpl: NetworkImpl) : ViewModel() {
 
         viewModelScope.launch(Dispatchers.IO) {
 
-
             try {
 
                 val liveData = viewState.value

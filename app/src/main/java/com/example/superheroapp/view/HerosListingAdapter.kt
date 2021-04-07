@@ -47,12 +47,8 @@ class HerosListingAdapter(private var list : List<HerosResponse>,private val emp
                 }
             }
             this.list = newList
-            if(list.isEmpty()){
-                empty.invoke(true)
-            }else{
-                empty.invoke(false)
-            }
             notifyDataSetChanged()
         }
+        empty.invoke(list.isEmpty())
     }
 }

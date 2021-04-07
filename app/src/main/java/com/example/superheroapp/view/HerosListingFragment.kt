@@ -52,32 +52,26 @@ class HerosListingFragment : Fragment(R.layout.listing_layout), SearchView.OnQue
                 HeroResponse.DefaultError -> {
 
                     if(NetworkUtils.isConnected()){
-
                         text.text = getString(R.string.wrong)
-
                     }else{
-
                         text.text = getString(R.string.connect)
-
                     }
                 }
                 HeroResponse.RequestInFlight -> {
-
                     text.text = getString(R.string.fetch_data)
-
                 }
                 is HeroResponse.Success -> {
 
+                    toolbar.menu.findItem(R.id.search).isVisible = true
+
                     val recyclerView = view.findViewById<RecyclerView>(R.id.heros_list)
                     val adapter = HerosListingAdapter(state.heroData.HerosData,empty = {
-
                         if(it) {
                             recyclerView.visibility = View.GONE
                             text.text = getString(R.string.no_heroes)
                         }else{
                             recyclerView.visibility = View.VISIBLE
                         }
-
                     })
 
                     recyclerView.visibility = View.VISIBLE
