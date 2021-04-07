@@ -4,4 +4,5 @@
     <string name="wrong">Something went wrong</string>
     <string name="connect">Please connect to internet</string>
     <string name="no_heroes">No Heroes found</string>
+    <string name="strength">Strength : %1$s</string>
 </resources>

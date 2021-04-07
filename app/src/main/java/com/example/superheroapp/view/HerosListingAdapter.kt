@@ -21,7 +21,8 @@ class HerosListingAdapter(private var list : List<HerosResponse>,private val emp
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.name.text = list[position].name
-        holder.strength.text = list[position].powerStats.strength.toString()
+        val str = String.format(holder.name.context.getString(R.string.strength),list[position].powerStats.strength.toString() )
+        holder.strength.text = str
         Glide.with(holder.itemView.context)
                 .load(list[position].image.url)
                 .into(holder.image)
@@ -31,7 +32,7 @@ class HerosListingAdapter(private var list : List<HerosResponse>,private val emp
 
         val image: ImageView = itemView.findViewById(R.id.coverImage)
         val name: TextView = itemView.findViewById(R.id.HeroName)
-        val strength: TextView = itemView.findViewById(R.id.Strength)
+        val strength: TextView = itemView.findViewById(R.id.strength)
 
     }
 
