@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SuperHeroApp</string>
+    <string name="fetch_data">Fetching Heroes Data</string>
+    <string name="wrong">Something went wrong</string>
+    <string name="connect">Please connect to internet</string>
+    <string name="no_heroes">No Heroes found</string>
 </resources>

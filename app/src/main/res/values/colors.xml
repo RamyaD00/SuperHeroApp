@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="status_bar">#FFFFFF</color>
+    <color name="day_black">#000000</color>
+    <color name="day_white">#FFFFFF</color>
+    <color name="day_white_grey_night_black">#F0F0F0</color>
+    <color name="day_white_night_grey">#FFFFFF</color>
+    <color name="fab_bg">#FFFFFF</color>
+    <color name="fab_icon">#FF6200EE</color>
 </resources>
